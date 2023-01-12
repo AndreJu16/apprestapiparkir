@@ -20,8 +20,8 @@ exports.showdataparkir = function(req,res){
 
 //menampilkan semua data berdasarkan id 
 exports.tampilberdasarkanid = function(req,res){
-     let id = req.params.id;
-     connection.query('SELECT * FROM dbparkirprojectla Where id = ?', [id],
+     let Id = req.params.Id;
+     connection.query('SELECT * FROM dbparkirprojectla Where id = ?', [Id],
         function(error, rows, fields){
             if(error){
                 console.log(error);
